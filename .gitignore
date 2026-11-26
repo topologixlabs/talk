@@ -1,0 +1,24 @@
+# Build output and local tools: never publish
+/target/
+/app/target/
+/app/node_modules/
+/.toolchain/
+/app/gen/apple/build/
+/app/gen/apple/Externals/
+
+# Private: grant drafts and machine-specific test logs
+/otf/
+/OTF-concept-note-draft.md
+/results/
+/link-test.sh
+
+# Local secrets and data, in case they ever appear
+*.pem
+*.key
+*.p12
+*.vault
+*.db
+.env*
+
+# Private test-machine address
+/app/link.local.env
